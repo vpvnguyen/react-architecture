@@ -53,4 +53,3 @@
 ```
 
 ![React DDD Diagram](./react-ddd.svg)
-<img src="./react-ddd.svg">
