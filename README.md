@@ -51,3 +51,6 @@
 ├── package.json
 └── .gitignore
 ```
+
+![React DDD Diagram](./react-ddd.svg.svg)
+<img src="./react-ddd.svg.svg">
