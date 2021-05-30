@@ -114,7 +114,7 @@ Interface Segregation Principle
 - The 3 user operations example:
 
 ```javascript
-// bad
+// bad?
 
 const operations = (User1, User2, User3) => {
   operation1();
@@ -122,7 +122,7 @@ const operations = (User1, User2, User3) => {
   operation3();
 };
 
-// good
+// good?
 
 const operationsClass = () => {
   return {
@@ -196,13 +196,13 @@ Domain Layer
 - Features are vertical slices
 
 ```bash
-# Feature
-├── Presentation
-│   ├── UI Logic        # local component state, view behavior. Takes in data, handles user events
-│   ├── Container       # aka controller/route to pages
-│   ├── Interaction     # model behavior. decision-making layer. contains your application's operations (app logic). sometimes several layers: Auth, Logging, Pub/Sub, Render logic, Metadata
-│   ├── Transport       # networking & data fetching (infrastructure). API calls and reporting.
-│   ├── Persistence     # state management & storage (infrastructure), redux, graphql
+# Feature Structure Example
+├── Feature
+│   ├── Presentation / UI Logic     # contains UI logic for local component state, view behavior. takes in data, handles user events
+│   ├── Container                   # aka controller/route to pages
+│   ├── Interaction                 # model behavior. decision-making layer. application's operations (app logic). sometimes several layers: Auth, Logging, Pub/Sub, Render logic, Metadata
+│   ├── Transport                   # networking & data fetching (infrastructure). API calls and reporting.
+│   ├── Persistence                 # state management & storage (infrastructure), redux, graphql
 
 ```
 
@@ -215,17 +215,17 @@ Verticals:
 - Delete User
 
 ```bash
-# Create User
-├── Presentation
-│   ├── UI Logic
+# Feature: Create User
+├── CreateUser
+│   ├── Presentation / UI Logic
 │   ├── Container
 │   ├── Interaction
 │   ├── Transport
 │   ├── Persistence
 
-# Get User
-├── Presentation
-│   ├── UI Logic
+# Feature: Get User
+├── GetUser
+│   ├── Presentation / UI Logic
 │   ├── Container
 │   ├── Interaction
 │   ├── Transport
