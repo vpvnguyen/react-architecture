@@ -48,7 +48,12 @@ The application layer and the domain layer are in the middle of this architectur
 
 > Components should be open for extension, but closed for modification
 
-Categories of business logic ordered from lowest level policy to highest level policy: 6. Presentation logic 5. Data access logic (caches, databases, front-ends, etc.) 4. Application layer logic / use case (applications like Google's Docs, Sheets, Maps, etc. set of use cases and policy that governs those use cases) 3. Domain layer logic (Core business that doesn't quite fit within the confines of a single entity) 2. Validation logic
+Categories of business logic ordered from lowest level policy to highest level policy:  
+6. Presentation logic  
+5. Data access logic (caches, databases, front-ends, etc.)  
+4. Application layer logic / use case (applications like Google's Docs, Sheets, Maps, etc. set of use cases and policy that governs those use cases)  
+3. Domain layer logic (Core business that doesn't quite fit within the confines of a single entity)  
+2. Validation logic
 
 1. Core business logic
 
