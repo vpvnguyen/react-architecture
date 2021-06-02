@@ -265,7 +265,7 @@ Verticals:
 │   ├── TodoPage.js
 
 # Domain / Feature
-├── domain
+├── components
 │   ├── Todo
 │   │   ├── TodoIndex.js / index.js
 │   │   ├── TodoContainer.js
